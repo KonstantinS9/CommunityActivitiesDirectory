@@ -30,6 +30,8 @@ namespace CommunityActivitiesDirectory.Models
         [MinLength(ActivityOrganizerMinLength)]
         public string Organizer { get; set; } = null!;
         public bool IsPublic { get; set; }
+
+        [Range(ActivityMinParticipants, ActivityMaxParticipants)]
         public int MaxParticipants { get; set; }
     }
 }

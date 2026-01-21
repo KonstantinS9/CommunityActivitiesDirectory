@@ -11,5 +11,11 @@
         public const int ActivityLocationMinLength = 2;
         public const int ActivityOrganizerMaxLength = 200;
         public const int ActivityOrganizerMinLength = 2;
+        public const int ActivityMinParticipants = 1;
+        public const int ActivityMaxParticipants = 1000;
+
+        /* Category */
+        public const int CategoryNameMaxLength = 100;
+        public const int CategoryNameMinLength = 2;
     }
 }
