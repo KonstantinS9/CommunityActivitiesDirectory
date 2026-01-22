@@ -6,7 +6,7 @@ namespace CommunityActivitiesDirectory.Data.Configuration
 {
     public class ActivityConfiguration : IEntityTypeConfiguration<Activity>
     {
-        public static readonly Activity[] Activities =
+        public readonly Activity[] Activities =
         {
             new Activity { Id = 1, Title = "Morning Yoga Session", Description = "A relaxing yoga session suitable for all levels to start the day energized.", Location = "City Park", Date = new DateOnly(2026, 3, 10), StartTime = new DateOnly(2026, 3, 10), EndTime = new DateOnly(2026, 3, 10), Organizer = "Healthy Living Club", IsPublic = true, MaxParticipants = 250, CategoryId = 1, VenueId = 1 },
             new Activity { Id = 2, Title = "Tech Networking Evening", Description = "An evening event for developers and tech enthusiasts to connect and share ideas.", Location = "Innovation Hub", Date = new DateOnly(2026, 3, 12), StartTime = new DateOnly(2026, 3, 12), EndTime = new DateOnly(2026, 3, 12), Organizer = "Tech Community", IsPublic = true, MaxParticipants = 400, CategoryId = 2, VenueId = 2 },
@@ -46,7 +46,7 @@ namespace CommunityActivitiesDirectory.Data.Configuration
 
 
 
-        public void Configure(EntityTypeBuilder<Activity> builder)
+        public void Configure(EntityTypeBuilder<Activity> entity)
         {
             throw new NotImplementedException();
         }
