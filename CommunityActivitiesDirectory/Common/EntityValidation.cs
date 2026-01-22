@@ -17,5 +17,13 @@
         /* Category */
         public const int CategoryNameMaxLength = 100;
         public const int CategoryNameMinLength = 2;
+
+        /* Venue */
+        public const int VenueNameMaxLength = 150;
+        public const int VenueNameMinLength = 2;
+        public const int VenueAddressMaxLength = 250;
+        public const int VenueAddressMinLength = 2;
+        public const int VenueCityMaxLength = 100;
+        public const int VenueCityMinLength = 2;
     }
 }
