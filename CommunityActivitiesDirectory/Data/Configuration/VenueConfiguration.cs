@@ -21,9 +21,10 @@ namespace CommunityActivitiesDirectory.Data.Configuration
         };
 
 
-        public void Configure(EntityTypeBuilder<Venue> builder)
+        public void Configure(EntityTypeBuilder<Venue> entity)
         {
-            throw new NotImplementedException();
+            entity
+                .HasData(Venues);
         }
     }
 }

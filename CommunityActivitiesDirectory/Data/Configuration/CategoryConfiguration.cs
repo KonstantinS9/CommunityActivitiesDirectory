@@ -16,9 +16,10 @@ namespace CommunityActivitiesDirectory.Data.Configuration
         };
 
 
-        public void Configure(EntityTypeBuilder<Category> builder)
+        public void Configure(EntityTypeBuilder<Category> entity)
         {
-            throw new NotImplementedException();
+            entity
+                .HasData(Categories);
         }
     }
 }

@@ -48,7 +48,8 @@ namespace CommunityActivitiesDirectory.Data.Configuration
 
         public void Configure(EntityTypeBuilder<Activity> entity)
         {
-            throw new NotImplementedException();
+            entity
+                .HasData(Activities);
         }
     }
 }
