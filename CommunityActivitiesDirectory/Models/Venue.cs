@@ -21,5 +21,7 @@ namespace CommunityActivitiesDirectory.Models
         [MaxLength(VenueCityMaxLength)]
         [MinLength(VenueCityMinLength)]
         public string City { get; set; } = null!;
+
+        public ICollection<Activity> Activities { get; set; } = new List<Activity>();
     }
 }

@@ -13,5 +13,7 @@ namespace CommunityActivitiesDirectory.Models
         public string Name { get; set; } = null!;
 
         public bool IsActive { get; set; }
+
+        public ICollection<Activity> Activities { get; set; } = new List<Activity>();
     }
 }

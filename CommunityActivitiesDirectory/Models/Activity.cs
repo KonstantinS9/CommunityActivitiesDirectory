@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using static CommunityActivitiesDirectory.Common.EntityValidation;
 namespace CommunityActivitiesDirectory.Models
 {
@@ -33,5 +34,13 @@ namespace CommunityActivitiesDirectory.Models
 
         [Range(ActivityMinParticipants, ActivityMaxParticipants)]
         public int MaxParticipants { get; set; }
+
+        [ForeignKey(nameof(Category))]
+        public int CategoryId { get; set; }
+        public Category? Category { get; set; }
+
+        [ForeignKey(nameof(Venue))]
+        public int VenueId { get; set; }
+        public Venue? Venue { get; set; }
     }
 }
