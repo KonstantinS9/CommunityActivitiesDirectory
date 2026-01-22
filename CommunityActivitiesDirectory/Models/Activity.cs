@@ -22,9 +22,9 @@ namespace CommunityActivitiesDirectory.Models
         [MaxLength(ActivityLocationMaxLength)]
         [MinLength(ActivityLocationMinLength)]
         public string Location { get; set; } = null!;
-        public DateOnly Date { get; set; }
-        public DateOnly StartTime { get; set; }
-        public DateOnly EndTime { get; set; }
+        public DateTime Date { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
 
         [Required]
         [MaxLength(ActivityOrganizerMaxLength)]
